@@ -41,6 +41,7 @@
     --liner-gradient: linear-gradient(96.64deg, #FD9B2B 13.58%, #F14F09 86.99%);
     --pink-color: #F7608C;
     --orange-color: #F8AC58;
+    --slider-bg: #141044;
 
     --fs-10: 10px;
     --fs-14: 14px;
@@ -356,7 +357,65 @@
     margin-top: 10px;
 }
 
-/* checkbox custom */
+.max-w-367 {
+    max-width: 367px;
+}
+
+.slick-itm {
+    background-color: var(--slider-bg);
+    border-radius: 13px;
+}
+
+.pb_21 {
+    padding-bottom: 21px;
+}
+
+.px_21 {
+    padding-left: 21px;
+    padding-right: 21px;
+}
+
+.pt_17 {
+    padding-top: 17px;
+}
+
+.container-slider,
+.container-pop {
+    max-width: 1140px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slick-dots li button {
+    display: none !important;
+}
+
+.slick-dots {
+    bottom: -65px !important;
+}
+
+.slick-dots .slick-active {
+    background-color: #1219D2;
+    width: 59px;
+    height: 12px;
+    border-radius: 21px;
+}
+
+.slick-dots li {
+    width: 25px;
+    height: 12px;
+    background: var(--white-color);
+    border-radius: 21px;
+}
+
+.rounded_13 {
+    /* border-radius: 13px; */
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+}
+
 
 *,
 *:before,
@@ -371,6 +430,41 @@
 .form-group {
     display: block;
     margin-bottom: 15px;
+}
+
+.slick-slide {
+    margin-left: 27px;
+}
+
+.slick-list {
+    margin-left: -27px;
+}
+
+.slick-itm:hover .off_txt {
+    opacity: 1;
+}
+
+.img_txt {
+    opacity: 0;
+}
+
+.img:hover .img_txt {
+    opacity: 1;
+}
+
+.img_txt,
+.off_txt {
+    backdrop-filter: blur(10px);
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    top: 16px;
+    left: 16px;
+    border-radius: 42px;
+    background-color: #01010140;
+    opacity: 0;
+    transition: all 400ms linear !important;
 }
 
 .form-group input {
@@ -467,10 +561,21 @@
     z-index: -1;
 }
 
+.container_tokenomics {
+    max-width: 1120px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .px_202px {
     padding-left: 202px;
     padding-right: 202px;
+}
+
+.pt_160 {
+    padding-top: 160px;
 }
 
 input[type="text"]::placeholder {
@@ -568,12 +673,23 @@ input[type="text"]::placeholder {
     margin-top: 40px;
 }
 
+.bg_img {
+    background-image: url(../img/png/tekenomics_sec_bg_img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 .pb_180 {
     padding-bottom: 180px;
 }
 
 .min-h-646 {
     min-height: 646px;
+}
+
+.pb_106 {
+    padding-bottom: 106px;
 }
 
 @media (max-width:992px) {

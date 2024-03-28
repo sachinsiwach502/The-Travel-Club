@@ -43,9 +43,13 @@ nav_btn.addEventListener("click", () => {
 
 
 const btns = document.querySelectorAll(".buttons");
+let nav = document.querySelector(".buttons");
+nav.style.textDecoration = "underline";
 
 btns.forEach(btn => {
+
     btn.addEventListener("click", () => {
+        nav.style.textDecoration = "none";
         btns.forEach(btn_2 => {
             btn_2.addEventListener("click", () => {
                 if (btn_2 !== btn) {
@@ -53,15 +57,46 @@ btns.forEach(btn => {
                 }
             })
         })
-
-        let decoration = window.getComputedStyle(btn).textDecoration;
-        if (decoration.includes("underline")) {
-            btn.style.textDecoration = "none";
-        } else {
-            btn.style.textDecoration = "underline";
-        }
+        btn.style.textDecoration = "underline";
     });
 });
 
 
 
+$('.slick-slider').slick({
+    dots: true,
+    infinite: true,
+    nextArrow: false,
+    prevArrow: false,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+
+    ]
+});

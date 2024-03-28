@@ -388,6 +388,59 @@
     padding-top: 17px;
 }
 
+.pt_44 {
+    padding-top: 44px;
+}
+
+.footer-links:hover {
+    opacity: 1 !important;
+    -webkit-text-stroke: thin;
+}
+
+.sec-1-ellips-left {
+    top: 0%;
+    left: 0%;
+    transform: translate(0, -45%);
+}
+
+.sec-1-ellpis-right {
+    bottom: 0;
+    right: 0;
+    transform: translate(0, 35%);
+}
+
+.sec-2-left-ellips {
+    left: 0;
+    top: 0;
+    transform: translate(0, -15%);
+}
+
+.sec-3-left-ellips {
+    top: 0;
+    left: 0;
+
+}
+
+.sec-3-right-ellips {
+    top: 0;
+    right: 0;
+}
+
+.sec-4-right-ellips {
+    top: 0;
+    right: 0;
+    transform: translate(0, -30%);
+}
+
+.media_app:hover span svg path {
+    transform: scale(0.9);
+}
+
+.pb_50 {
+    padding-bottom: 50px;
+}
+
+.container_footer,
 .container-slider,
 .container-pop {
     max-width: 1140px;
@@ -442,11 +495,27 @@
 }
 
 .slick-slide {
-    margin-left: 27px;
+    margin-left: 20px;
 }
 
 .slick-list {
-    margin-left: -27px;
+    margin-left: -20px;
+}
+
+.max-w-420 {
+    max-width: 420px;
+}
+
+.sec-4-left-ellip {
+    left: 0;
+    bottom: 0;
+    transform: translate(0, 30%);
+}
+
+.sec-5-right-ellips {
+    right: 0;
+    bottom: 0;
+    transform: translate(0, 30%);
 }
 
 .slick-itm:hover .off_txt {
@@ -544,8 +613,13 @@
 .connect-btn {
     padding: 16px 32px;
     background: var(--btn-color);
-    border: none;
+    border: 1px solid transparent;
     border-radius: 60px;
+}
+
+.connect-btn:hover {
+    border: 1px solid var(--white-color);
+    background: transparent;
 }
 
 .bg-img {

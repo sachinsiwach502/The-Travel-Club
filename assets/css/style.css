@@ -53,6 +53,7 @@
     --fs-25: 25px;
     --fs-28: 28px;
     --fs-30: 30px;
+    --fs-32: 32px;
     --fs-36: 36px;
     --fs-40: 40px;
     --fs-48: 48px;
@@ -265,6 +266,10 @@
     font-size: var(--fs-48);
 }
 
+.fs-32 {
+    font-size: var(--fs-32);
+}
+
 .fs-25 {
     font-size: var(--fs-25);
 }
@@ -444,6 +449,12 @@
     opacity: 1;
 }
 
+.slick-slide>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .img_txt {
     opacity: 0;
 }
@@ -578,6 +589,45 @@
     padding-top: 160px;
 }
 
+.w_h_406 {
+    max-width: 406px;
+    min-height: 406px;
+}
+
+.px_50 {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.gap_90 {
+    gap: 90px;
+}
+
+.pt_26 {
+    padding-top: 26px;
+}
+
+.gap_30 {
+    gap: 30px;
+}
+
+.pt-18 {
+    padding-top: 18px;
+}
+
+.w_h_582_480 {
+    width: 582px;
+    min-height: 480px;
+    background: rgba(18, 25, 210, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    /* opacity: 20%; */
+}
+
+.gap_100 {
+    gap: 100px;
+}
+
 input[type="text"]::placeholder {
     font-weight: var(--fw-3);
     font-family: var(--ff-poopins);
@@ -684,12 +734,68 @@ input[type="text"]::placeholder {
     padding-bottom: 180px;
 }
 
+.blue_line {
+    border: 4px solid rgba(105, 108, 223, 1);
+    height: 50px;
+}
+
+.yellow_line {
+    height: 50px;
+    border: 4px solid rgba(209, 179, 94, 1)
+}
+
+.green_line {
+    height: 50px;
+    border: 4px solid rgba(152, 219, 179, 1)
+}
+
+
+
+
+
+.purpel_line {
+    height: 50px;
+    border: 4px solid rgba(92, 54, 138, 1);
+}
+
+.orange_line {
+    height: 50px;
+    border: 4px solid rgba(231, 110, 154, 1);
+}
+
 .min-h-646 {
     min-height: 646px;
 }
 
 .pb_106 {
     padding-bottom: 106px;
+}
+
+.layer {
+    top: 0%;
+    right: 0%;
+}
+
+.pb_130 {
+    padding-bottom: 130px;
+}
+
+.pt_50 {
+    padding-top: 50px;
+}
+
+.pl_24 {
+    padding-left: 24px;
+}
+
+.max-sm-gap-24 {
+    gap: 24px;
+}
+
+.bottom-layer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 @media (max-width:992px) {
@@ -771,6 +877,14 @@ input[type="text"]::placeholder {
 @media (min-width:576px) {
     .md_gap_30 {
         gap: 30px;
+    }
+
+    .gap-143 {
+        gap: 143px;
+    }
+
+    .pt_54 {
+        padding-top: 54px;
     }
 
 }

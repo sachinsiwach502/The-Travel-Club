@@ -115,6 +115,10 @@
     cursor: pointer;
 }
 
+.pb_160 {
+    padding-bottom: 160px;
+}
+
 .lh-26 {
     line-height: var(--lh-26);
 }
@@ -792,10 +796,27 @@ input[type="text"]::placeholder {
     gap: 24px;
 }
 
+
 .bottom-layer {
     position: absolute;
     bottom: 0;
     right: 0;
+}
+
+.container_accordian {
+    max-width: 749px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.max-w-576 {
+    max-width: 576px;
+}
+
+.accord_txt {
+    display: none;
 }
 
 @media (max-width:992px) {

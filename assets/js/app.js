@@ -100,3 +100,36 @@ $('.slick-slider').slick({
 
     ]
 });
+
+let accord = document.querySelectorAll(".accord_item");
+
+document.querySelector(".accord_txt").style.display = "block";
+document.querySelector(".arrow").style.transform = "rotate(180deg)";
+
+accord.forEach(item => {
+    let click_part = item.querySelector(".accord-click");
+    let img = item.querySelector(".arrow");
+    let txt = item.querySelector(".accord_txt")
+
+    click_part.addEventListener("click", () => {
+        accord.forEach(otheritem => {
+
+            let txt = otheritem.querySelector(".accord_txt");
+            let img = otheritem.querySelector(".arrow");
+            if (otheritem !== item) {
+                txt.style.display = "none";
+                img.style.transform = "rotate(0deg)";
+            }
+        })
+
+        let txt_disp = window.getComputedStyle(txt).display;
+        if (txt_disp === "none") {
+            txt.style.display = "block";
+            img.style.transform = "rotate(180deg)";
+        } else {
+            txt.style.display = "none";
+            img.style.transform = "rotate(0deg)";
+        }
+
+    })
+})

@@ -163,3 +163,10 @@ gsap.to(".to_top", {
     repeat: -1,
     duration: 1,
 })
+
+let pre_loader = document.querySelector(".pre-loader");
+pre_loader.classList.remove("disp_none");
+
+setTimeout(() => {
+    pre_loader.classList.add("disp_none");
+}, 2000);

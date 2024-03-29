@@ -943,10 +943,15 @@ input[type="text"]::placeholder {
     bottom: 0;
 }
 
+
+
 /* .to_top:hover {
     transform: scale(2);
 } */
 
+.pt-54 {
+    padding-top: 54px;
+}
 
 @media (max-width:992px) {
     .nav-view {
@@ -1037,11 +1042,29 @@ input[type="text"]::placeholder {
         padding-top: 54px;
     }
 
+
+
+}
+
+@media (max-width:768px) and (min-width:576px) {
+    .pos-img {
+        right: 0;
+        bottom: 0;
+        transform: translate(109%, -100%);
+    }
 }
 
 @media (max-width:576px) {
     .max-sm-fs-lh-change {
         font-size: var(--fs-30);
         line-height: var(--lh-37);
+    }
+
+    .md-fs-16 {
+        font-size: var(--fs-16);
+    }
+
+    .md_gap_15 {
+        gap: 15px;
     }
 }

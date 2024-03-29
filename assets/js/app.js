@@ -150,4 +150,16 @@ to_arrow.addEventListener("click", () => {
         top: 0,
         behavior: "smooth"
     });
+});
+
+// gsap.from(".roatation_img", {
+//     duration: 4,
+//     repeat: -1,
+//     rotation: 360,
+// });
+
+gsap.to(".to_top", {
+    scale: 0.5,
+    repeat: -1,
+    duration: 1,
 })

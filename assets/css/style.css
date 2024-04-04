@@ -28,8 +28,10 @@
     --primary-color: #140D1B;
     --nav-color: #FFFFFF0A;
     --black-color: #000000;
+    --bordr-color: #FFFFFF99;
     --btn-color: linear-gradient(90deg, #1219D2 0%, #4E52B1 100%);
     --slider-color: #F0E8E1;
+    --gradient-blue: #1219D2;
     --red-color: #FF1300;
     --green-color: #00A106;
     --team-1: #70675F;
@@ -43,6 +45,7 @@
     --pink-color: #F7608C;
     --orange-color: #F8AC58;
     --slider-bg: #141044;
+    --loaction-border: #2B2A4C;
 
     --fs-10: 10px;
     --fs-14: 14px;
@@ -460,7 +463,7 @@
 }
 
 .slick-dots .slick-active {
-    background-color: #1219D2;
+    background-color: var(--gradient-blue);
     width: 59px;
     height: 12px;
     border-radius: 21px;
@@ -488,6 +491,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+.slider .slick-current div {
+    border: 1px solid rgba(18, 25, 210, 1);
+    border-radius: 13px;
 }
 
 .form-group {
@@ -647,7 +655,7 @@
     content: "";
     width: 100%;
     position: absolute;
-    background-color: #1219D2;
+    background-color: var(--gradient-blue);
     height: 21px;
     border-radius: 21px;
     bottom: 17%;
@@ -759,8 +767,8 @@ input[type="text"]::placeholder {
 }
 
 .location-border {
-    border: 1px solid #FFFFFF99;
-    background-color: #2B2A4C;
+    border: 1px solid var(--bordr-color);
+    background-color: var(--loaction-border);
     border-radius: 8px;
 }
 
@@ -914,7 +922,7 @@ input[type="text"]::placeholder {
 }
 
 .pre-loader {
-    background-color: #000000;
+    background-color: var(--black-color);
     top: 0;
     right: 0;
     width: 100%;

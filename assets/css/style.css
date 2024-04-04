@@ -1088,7 +1088,7 @@ input[type="text"]::placeholder {
 
 }
 
-@media (max-width:768px) and (min-width:576px) {
+@media (max-width:767.9px) and (min-width:576px) {
     .pos-img {
         right: 0;
         bottom: 0;
